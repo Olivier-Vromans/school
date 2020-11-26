@@ -1,5 +1,5 @@
 <?php
-include 'opdracht 2.1.php';
+include 'music.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -36,7 +36,7 @@ include 'opdracht 2.1.php';
                 <td> <? echo $albums["releaseYear"][$i]; ?> </td>
                 <td> <? echo $albums["tracks"][$i]; ?> </td>
                 <td> <? echo $albums["genre"][$i]; ?> </td>
-                <td> <td><a href="details.php?album_id=<?= $i ?>">Detail</a></td>
+                <td> <td><a href="details.php?album_id=<? $i ?>">Detail</a></td>
                 <td>  </td>
             </tr>
         <? } ?>
