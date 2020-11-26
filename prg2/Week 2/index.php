@@ -36,7 +36,7 @@ include 'music.php';
                 <td> <? echo $albums["releaseYear"][$i]; ?> </td>
                 <td> <? echo $albums["tracks"][$i]; ?> </td>
                 <td> <? echo $albums["genre"][$i]; ?> </td>
-                <td> <td><a href="details.php?album_id=<? $i ?>">Detail</a></td>
+                <td> <td><a href="details.php?album_id=<?= $i ?>">Detail</a></td>
                 <td>  </td>
             </tr>
         <? } ?>
