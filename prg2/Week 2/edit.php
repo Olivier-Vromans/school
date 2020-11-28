@@ -1,5 +1,5 @@
 <?php
-include 'music.php';
+include 'musicalbums.php';
 $album_id = array ($_GET["album_id"]);
 // turn $_GET in a value that can be used to read the right data
 // foreach ($album_id as $key => $value) {
