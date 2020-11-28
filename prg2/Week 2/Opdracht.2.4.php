@@ -34,11 +34,11 @@ function timeToBirthday() {
         <hr/>
         <h2>Toon de datum van vandaag in een webpagina met het format "31-12-19 10:00"</h2>
             <p>
-                <? echo "De datum en tijd van vandaag is " . date('d-m-y H:m');?>
+                <? echo "De datum en tijd van vandaag is " . date('d-m-y H:i');?>
             </p>
         <h2>Toon de datum als hierboven, maar dan 1 week eerder</h2>
              <p>
-                <? echo "De datum en tijd van vorige week was " . date("d-m-y H:m", strtotime("-7 days")); ?>
+                <? echo "De datum en tijd van vorige week was " . date("d-m-y H:i", strtotime("-7 days")); ?>
             </p>
         <h2>Toon het verschil in dagen tussen 5 februari en 12 augustus</h2>
             <p> <? echo timeInBetween(); ?>
