@@ -11,14 +11,17 @@ $album_id = array ($_GET["album_id"]);
 // }
 ?>
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
     <table>
     <? foreach ($album_id as $key => $value) { ?>
         <thead>
-            <th> <h2 class="h2"> <? echo $albums["artist"][$value], " - ", $albums["albumName"][$value]; ?> </h2> </th>
+            <th class="thead"> <? echo $albums["artist"][$value], " - ", $albums["albumName"][$value]; ?> </h2> </th>
         </thead>
         <tbody>
             <tr>
-                <td> <p>Het album <? echo $albums["albumName"][$value]; ?> van <? echo $albums["artist"][$value]; ?>
+                <td> <p class="tddeatails"> Het album <? echo $albums["albumName"][$value]; ?> van <? echo $albums["artist"][$value]; ?>
                 kwam uit in <? echo $albums["releaseYear"][$value]; ?>, het album bestaat uit 
                 <? echo $albums["tracks"][$value]; ?> die onder het genre <? echo $albums["genre"][$value]; ?> vallen. </p> </td>
             <tr>
