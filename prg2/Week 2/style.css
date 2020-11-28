@@ -1,3 +1,12 @@
+/* adding webfonts to css */
+@font-face {
+    font-family: 'futurespore';
+    src: URL('prg2/webfonts/futurespore.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'nasalization';
+    src: URL('prg2/webfonts/nasalization-rg.ttf') format('truetype');
+  }
 /* style for the heading */
 th {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,4 +32,7 @@ tr:nth-child(even) {
 tr:nth-child(odd){
     background: darkgray;
     color: white;
+}
+.h2 {
+    font-family: futurespore;
 }
