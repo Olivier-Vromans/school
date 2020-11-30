@@ -1,5 +1,5 @@
 <?php
-include 'musicalbums.php';
+require_once 'musicalbums.php';
 ?>
 <!doctype html>
 <html lang="en">
