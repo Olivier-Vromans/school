@@ -1,10 +1,80 @@
 <?php
-// array for the ten albums
-$albums=array (
-    "artist" => array("Linkin Park","Bring Me The Horizon", "Starset", "Thirty Seconds to Mars", "Icon For hire", "NF", "Eminem", "Movements", "Neffex", "Headhunterz"),
-    "albumName"=> array("Hybrid Theory (Bonus Edition)","Sempiternal (Expended Edition)", "Divisions", "A Beautiful Lie", "You Can't Kill Us", "Mansion", "Recovery", "Feel Something", "Fight Back The Collection", "The Return of Headhunterz"),
-    "releaseYear"=> array(2000,2013,2019,2005,2016,2015,2010,2017,2018,2018),
-    "tracks"=> array("14 tracks","13 tracks", "13 tracks", "14 tracks", "13 tracks", "12 Tracks", "16 Tracks", "11 Tracks", "8 Tracks", "11 Tracks"),
-    "genre"=> array("Alternitve Rock","Alternitve Rock", "Electronic Rock", "Alternitve Rock", "Alternitve Rock", "Christian Hip Hop", "Rap", "Emo", "Electronic Dance", "Hardstyle"),
-);
-?>
+/**
+ * Created by PhpStorm.
+ * User: bpikaar
+ * Date: 21/11/2017
+ * Time: 13:29
+ */
+$musicAlbums =
+    [
+        [
+            'artist' => 'Linkin Park',
+            'album' => 'Hybrid Theory (Bonus Edition)',
+            'genre' => 'Alternitve Rock',
+            'year' => '2000',
+            'tracks' => '14'
+        ],
+        [
+            'artist' => 'Bring Me The Horizon',
+            'album' => 'Sempiternal (Expended Edition)',
+            'genre' => 'Electronic Rock',
+            'year' => '2013',
+            'tracks' => '13'
+        ],
+        [
+            'artist' => 'Starset',
+            'album' => 'Divisions',
+            'genre' => 'Alternitve Rock',
+            'year' => '2019',
+            'tracks' => '13'
+        ],
+        [
+            'artist' => 'Thirty Seconds to Mars',
+            'album' => 'A Beautiful Lie',
+            'genre' => 'Alternitve Rock',
+            'year' => '2005',
+            'tracks' => '14'
+        ],
+        [
+            'artist' => 'Icon For hire',
+            'album' => 'You Cant Kill Us',
+            'genre' => 'Alternitve Rock',
+            'year' => '2016',
+            'tracks' => '13'
+        ],
+        [
+            'artist' => 'NF',
+            'album' => 'Mansion',
+            'genre' => 'Christian Hip Hop',
+            'year' => '2015',
+            'tracks' => '12'
+        ],
+        [
+            'artist' => 'Eminem',
+            'album' => 'Recovery',
+            'genre' => 'Rap',
+            'year' => '2010',
+            'tracks' => '16'
+        ],
+        [
+            'artist' => 'Movements',
+            'album' => 'Feel Something',
+            'genre' => 'Emo',
+            'year' => '2017',
+            'tracks' => '11'
+        ],
+        [
+            'artist' => 'Neffex',
+            'album' => 'Fight Back The Collection',
+            'genre' => 'Electronic Dance',
+            'year' => '2018',
+            'tracks' => '8'
+        ],
+        [
+            'artist' => 'Headhunterz',
+            'album' => 'The Return of Headhunterzr',
+            'genre' => 'Hardstyle',
+            'year' => '2018',
+            'tracks' => '11'
+        ],
+    ];

@@ -1,31 +1,37 @@
 <?php
 require_once 'musicalbums.php';
-$album_id = array ($_GET["album_id"]);
-// turn $_GET in a value that can be used to read the right data
-// foreach ($album_id as $key => $value) {
-//     echo $albums["artist"][$value] . "</br>";
-//     echo $albums["albumName"][$value] . "</br>";
-//     echo $albums["releaseYear"][$value] . "</br>";
-//     echo $albums["tracks"][$value] . "</br>";
-//     echo $albums["genre"][$value] . "</br>";
-// }
+
+// IF index is not present in url or value is empty
+if(!isset($_GET['index']) || $_GET['index'] == '')
+{
+    // redirect to index.php
+    header('Location: index.php');
+}
+// Get index of album from url (GET)
+$index = $_GET['index'];
+
+// get album from albums collection
+$album = $musicAlbums[$index];
+
 ?>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <table>
-    <? foreach ($album_id as $key => $value) { ?>
-        <thead>
-            <th class="thead"> <? echo $albums["artist"][$value], " - ", $albums["albumName"][$value]; ?> </h2> </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td> <p class="tddeatails"> Het album <? echo $albums["albumName"][$value]; ?> van <? echo $albums["artist"][$value]; ?>
-                kwam uit in <? echo $albums["releaseYear"][$value]; ?>, het album bestaat uit 
-                <? echo $albums["tracks"][$value]; ?> die onder het genre <? echo $albums["genre"][$value]; ?> vallen. </p> </td>
-            <tr>
-        </tbody>
-    <? } ?>
-    </table>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Music Collection Details</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<section>
+    <h1><?= $album['artist'] . ' - ' . $album['album']; ?></h1>
+    <ul>
+        <li>Genre: <?= $album['genre']; ?></li>
+        <li>Year: <?= $album['year']; ?></li>
+        <li>Tracks: <?= $album['tracks']; ?></li>
+    </ul>
+</section>
+<div>
+    <a href="index.php">Go back to the list</a>
+</div>
+</body>
 </html>
