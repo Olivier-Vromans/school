@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bpikaar
- * Date: 21/11/2017
- * Time: 13:29
- */
 $musicAlbums =
     [
         [
@@ -72,7 +66,7 @@ $musicAlbums =
         ],
         [
             'artist' => 'Headhunterz',
-            'album' => 'The Return of Headhunterzr',
+            'album' => 'The Return of Headhunterz',
             'genre' => 'Hardstyle',
             'year' => '2018',
             'tracks' => '11'
