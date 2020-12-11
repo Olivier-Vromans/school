@@ -6,7 +6,7 @@ $conn = openCon(); //making connection to the database
 
 //Get the result set from the database with a SQL query
 $result = mysqli_query($conn, "SELECT id, artist, album, genre, year, tracks, cover FROM musicAlbums")
-or die(mysqli_error($conn));
+or die(mysqli_error());
 
 //Loop through the result to create a custom array
 $albums=[];
