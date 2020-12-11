@@ -6,11 +6,11 @@ $conn = openCon(); //making connection to the database
 
 //Get the result set from the database with a SQL query
 $result = mysqli_query($conn, "SELECT id, artist, album, genre, year, tracks, cover FROM musicAlbums")
-or die(mysqli_error());
+or die(mysqli_error($conn));
 
 //Loop through the result to create a custom array
-$albums=array();
-while($row = $result->fetch_array(MYSQLI_ASSOC)){
+$albums=[];
+while($row = mysqli_fetch_assoc(MYSQLI_ASSOC)){
     $albums []= 
         [
         'id' => $row['id'],
@@ -57,8 +57,8 @@ $conn->close();
     </tr>
     </tfoot>
     <tbody>
-    <?php foreach ($albums as $index => $album) { ?>       
-         <tr>
+    <?php foreach ($albums as $index => $album) { ?>
+        <tr>
             <td class="image"><img src="media/<? echo $album['cover'];?>" alt="cover"/></td>
             <td><?= $album['id'] ?></td>
             <td><?= $album['artist'] ?></td>
