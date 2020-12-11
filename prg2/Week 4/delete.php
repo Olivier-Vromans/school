@@ -16,7 +16,7 @@ $album = mysqli_fetch_assoc($result);
 $deleteAlbum = "DELETE FROM albums WHERE id = $albumId";
 // path to cover
 $tempPath = "images/";
-$path = $tempPath . $album['image'];
+// $path = $tempPath . $album['image'];
 echo $path;
 
 if(isset($_POST['Delete'])){
